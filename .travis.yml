@@ -1,0 +1,15 @@
+language: C++
+
+
+
+compiler:
+       - gcc
+     
+
+       - wget https://github.com/Akheon23/eigen-jb-mr2-release-Eigen ./
+
+
+
+before_install: sudo hostname 10.0.0.2 && configure &&  make 
+
+install: true
